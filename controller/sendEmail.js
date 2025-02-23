@@ -7,17 +7,19 @@ const sendEmailEthereal = async (req, res) => {
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-      user: 'marlene.legros@ethereal.email',
-      pass: 'va4q5BKKtry7aq58Gv', 
+      user: 'sheldon22@ethereal.email',
+      pass: 'CxRKtKcNDn1VzNeEWx', 
     },
   });
 
   let info = await transporter.sendMail({
-    from: '"Coding Addict" <codingaddict@gmail.com>',
-    to: 'bar@example.com',
-    subject: 'Hello',
+    from: '"Lian Sun" <liansun0203@gmail.com>',
+    to: 'shoke@example.com',
+    subject: 'Testing Nodemailer',
     html: '<h2>Sending Emails with Node.js</h2>',
   });
 
   res.json(info);
 };
+
+module.exports = sendEmailEthereal
