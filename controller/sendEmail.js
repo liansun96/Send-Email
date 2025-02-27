@@ -13,10 +13,10 @@ const sendEmailEthereal = async (req, res) => {
   });
 
   let info = await transporter.sendMail({
-    from: '"Lian Sun" <liansun0203@gmail.com>',
-    to: 'shoke@example.com',
-    subject: 'Testing Nodemailer',
-    html: '<h2>Sending Emails with Node.js</h2>',
+    from: '"Toe Tet" <toetetaung0203@gmail.com>',
+    to: 'testingetherealmail@example.com',
+    subject: 'Testing Ethereal Mail With Nodemailer',
+    html: '<h1>Yoooo this is testing ethereal mail with nodemailer...</h1>',
   });
 
   res.json(info);
