@@ -16,7 +16,7 @@ const sendEmailEthereal = async (req, res) => {
     from: '"Toe Tet Aung" <toetetaung0203@gmail.com>',
     to: 'testingetherealmail@example.com',
     subject: 'Testing Ethereal Mail With Nodemailer',
-    html: '<h1>Yoooo this is testing ethereal mail with nodemailer...</h1>',
+    html: '<h2>Yoooo this is testing ethereal mail with nodemailer</h2>',
   });
 
   res.json(info);
