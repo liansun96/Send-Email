@@ -12,14 +12,14 @@ const sendEmailEthereal = async (req, res) => {
     },
   });
 
-  // let msg = await transporter.sendMail({
-  //   from: '"Toe Tet Aung" <toetetaung0203@gmail.com>',
-  //   to: 'testingetherealmail@example.com',
-  //   subject: 'Testing Ethereal Mail With Nodemailer',
-  //   html: '<h2>Yoooo this is testing ethereal mail with nodemailer</h2>',
-  // });
+  let msg = await transporter.sendMail({
+    from: '"Toe Tet Aung" <toetetaung0203@gmail.com>',
+    to: 'testingetherealmail@example.com',
+    subject: 'Testing Ethereal Mail With Nodemailer',
+    html: '<h2>Yoooo this is testing ethereal mail with nodemailer</h2>',
+  });
 
-  // res.json(msg);
+  res.json(msg);
 
 
 };
